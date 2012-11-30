@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Documents/Code/Java/bukkit-1.3.2-R1.1-20121014.083840-6.jar" sourcepath="C:/Users/Chris/Documents/Code/Java/Bukkit-Bukkit-a4314b1"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

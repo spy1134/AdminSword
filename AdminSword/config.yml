@@ -1,0 +1,5 @@
+# This is the default action if
+# the user doesn't specify one.
+# Possible values: lightning, tnt
+# fireball, teleport
+defaultAction: lightning

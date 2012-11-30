@@ -1,0 +1,99 @@
+name: AdminSword
+version: 1.3.1
+description: Gives AdminSwords and other useful features.
+load: POSTWORLD
+author: spy_1134
+main: spy_1134.AdminSword.AdminSwordMain
+commands:
+   adminsword:
+      description: Runs a sub-command.
+      usage: /<command> [subcommand]
+      aliases: [as]
+permissions:
+   adminsword.*:
+      description: Gives access to all AdminSword commands.
+      children:
+         adminsword.check: true
+         adminsword.check.other: true
+         adminsword.fly: true
+         adminsword.fly.other: true
+         adminsword.kill: true
+         adminsword.kill.force: true
+         adminsword.setdefault: true
+         adminsword.toggle: true
+         adminsword.toggle.other: true
+         adminsword.type: true
+         adminsword.type.other: true
+         adminsword.type.fireball: true
+         adminsword.type.lightning: true
+         adminsword.type.teleport: true
+         adminsword.type.tnt: true
+   adminsword.normal:
+      description: Permissions for non-admin users.
+      children:
+         adminsword.check: true
+         adminsword.check.other: false
+         adminsword.fly: false
+         adminsword.fly.other: false
+         adminsword.kill: false
+         adminsword.kill.force: false
+         adminsword.setdefault: false
+         adminsword.toggle: false
+         adminsword.toggle.other: false
+         adminsword.type: true
+         adminsword.type.other: false
+         adminsword.type.fireball: false
+         adminsword.type.lightning: true
+         adminsword.type.teleport: true
+         adminsword.type.tnt: false
+   adminsword.nondestructive:
+      description: Permissions for all non-desctructive types.
+      children:
+         adminsword.normal: true
+         adminsword.type.lightning: true
+         adminsword.type.teleport: true
+   adminsword.check:
+      description: Allows you to check if you have AdminSword enabled.
+      default: true
+   adminsword.check.other:
+      description: Allows you to check if another player has AdminSword enabled.
+      default: op
+   adminsword.fly:
+      description: Allows you to toggle flight on yourself.
+      default: op
+   adminsword.fly.other:
+      description: Allows you to toggle flight on others.
+      default: op
+   adminsword.kill:
+      description: Allows you to kill other non-admin players.
+      default: op
+   adminsword.kill.force:
+      description: Allows you to kill any player.
+      default: op
+   adminsword.setdefault:
+      description: Allows you to set the default sword type in configuration.
+      default: op
+   adminsword.toggle:
+      description: Allows you to toggle AdminSword on yourself.
+      default: op
+   adminsword.toggle.other:
+      descvription: Allows you to toggle AdminSword on others.
+      default: op
+   adminsword.type:
+      description: Allows you to change what your sword does.
+      default: true
+   adminsword.type.other:
+      description: Allows you to change someone's sword type.
+      default: op
+   adminsword.type.fireball:
+      description: Allows you to change to and use fireball.
+      default: op
+   adminsword.type.lightning:
+      description: Allows you to change to and use lightning.
+      default: op
+   adminsword.type.teleport:
+      description: Allows you to change to and use teleport.
+      default: op
+   adminsword.type.tnt:
+      description: Allows you to change to and use tnt.
+      default: op
