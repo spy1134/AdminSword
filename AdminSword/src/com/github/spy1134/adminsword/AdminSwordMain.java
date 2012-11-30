@@ -8,7 +8,7 @@
 // 2.) You let users know that I was the original author.
 // 3.) You don't charge any money for your work.
 
-package spy_1134.AdminSword;
+package com.github.spy1134.adminsword;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

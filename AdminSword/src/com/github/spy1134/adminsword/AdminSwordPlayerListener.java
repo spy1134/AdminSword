@@ -1,4 +1,4 @@
-package spy_1134.AdminSword;
+package com.github.spy1134.adminsword;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
