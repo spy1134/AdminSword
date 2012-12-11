@@ -88,8 +88,11 @@ public class AdminSwordCommands extends AdminSwordMain implements CommandExecuto
 		// This plugin has been handed an argument that it can't handle.
 		else
 		{
-			// Return false to print proper usage.
-			return false;
+			// Send the source an error message.
+			sender.sendMessage(ChatColor.RED + "Unknown command! Type /adminsword help for commands.");
+			
+			// Return true since we handled error messages.
+			return true;
 		}
 	}
 	
